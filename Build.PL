@@ -34,10 +34,11 @@ $class->new(
 	module_name         => 'SQL::KeywordSearch',
 	license => 'perl',
 	requires => {
-		'Test::More'  	 => 0,
+		'Test::More'  	 	=> 0,
+		'Params::Validate' 	=> 0,
 	},
     recommends => {
-        'SQL::Intepolate' => 0,
+        'SQL::Interp' => 0,
     },
 )->create_build_script;
 

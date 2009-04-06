@@ -1,5 +1,9 @@
 Revision history for SQL-KeywordSearch
 
+1.12 Mon Apr  6 14:35:55 EDT 2009
+    - Add Params::Validate requirement to Build.PL to fix test failures
+    - Update docs to recommend SQL::Interp, not SQL::Interpolate.
+
 1.11
     - Documentation improvements (Greg Sabino Mullane, Jonathan Leffler)
 

@@ -1,9 +1,8 @@
 package SQL::KeywordSearch;
-use Params::Validate qw(:all);
-require Exporter;
-@ISA = qw(Exporter);
+use Params::Validate ':all';
+use base 'Exporter';
 
-our $VERSION = 1.11;
+our $VERSION = 1.12;
 
 # Make the functions available by default
 our @EXPORT = qw(
@@ -121,7 +120,7 @@ Set to 'REGEXP' if you are using MySQL. The default works for PostgreSQL.
 
 =item B<interp> (default: off)
 
-    # integrate with DBIx::Interpolate
+    # integrate with DBIx::Interp
     my $articles = $dbx->selectall_arrayref_i("
         SELECT article_id, title, summary
             FROM articles
@@ -133,8 +132,8 @@ Set to 'REGEXP' if you are using MySQL. The default works for PostgreSQL.
             )
             ,attr(Slice=>{}));
 
-Turn this on to return an array of SQL like L<SQL::Interpolate> or
-L<DBIx::Interpolate> expect as input.
+Turn this on to return an array of SQL like L<SQL::Interp> or
+L<DBIx::Interp> expect as input.
 
 =back
 
@@ -217,7 +216,7 @@ L<http://search.cpan.org/dist/SQL-KeywordSearch>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2006 Mark Stosberg, <mark@summersault.com>, all rights reserved.
+Copyright 2006 - 2009 Mark Stosberg, <mark@summersault.com>, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

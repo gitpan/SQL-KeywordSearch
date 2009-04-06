@@ -95,7 +95,7 @@ Functions
         PostgreSQL.
 
     interp (default: off)
-            # integrate with DBIx::Interpolate
+            # integrate with DBIx::Interp
             my $articles = $dbx->selectall_arrayref_i("
                 SELECT article_id, title, summary
                     FROM articles
@@ -107,8 +107,8 @@ Functions
                     )
                     ,attr(Slice=>{}));
 
-        Turn this on to return an array of SQL like SQL::Interpolate or
-        DBIx::Interpolate expect as input.
+        Turn this on to return an array of SQL like SQL::Interp or
+        DBIx::Interp expect as input.
 
 AUTHOR
     mark@summersault.com, "<mark at summersault.com>"
@@ -125,7 +125,7 @@ SEE ALSO
         <http://search.cpan.org/dist/SQL-KeywordSearch>
 
 COPYRIGHT & LICENSE
-    Copyright 2006 Mark Stosberg, <mark@summersault.com>, all rights
+    Copyright 2006 - 2009 Mark Stosberg, <mark@summersault.com>, all rights
     reserved.
 
     This program is free software; you can redistribute it and/or modify it

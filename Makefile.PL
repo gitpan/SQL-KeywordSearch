@@ -5,6 +5,7 @@ WriteMakefile
           'NAME' => 'SQL::KeywordSearch',
           'VERSION_FROM' => 'lib/SQL/KeywordSearch.pm',
           'PREREQ_PM' => {
+                           'Params::Validate' => '0',
                            'Test::More' => '0'
                          },
           'INSTALLDIRS' => 'site',
