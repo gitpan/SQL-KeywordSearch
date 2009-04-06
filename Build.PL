@@ -29,7 +29,6 @@ my $class = Module::Build->subclass(
 
 
 $class->new(
-    create_makefile_pl  => 'traditional', 
     dist_author         => 'Mark Stosberg <mark@summersault.com>',
 	module_name         => 'SQL::KeywordSearch',
 	license => 'perl',

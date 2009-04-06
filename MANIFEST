@@ -2,11 +2,10 @@ Build.PL
 Changes
 MANIFEST			This list of files
 MANIFEST.SKIP
-Makefile.PL
+META.yml
 README
 lib/SQL/KeywordSearch.pm
 t/basic.t
 t/boilerplate.t
 t/pod-coverage.t
 t/pod.t
-META.yml

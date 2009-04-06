@@ -2,7 +2,7 @@ package SQL::KeywordSearch;
 use Params::Validate ':all';
 use base 'Exporter';
 
-our $VERSION = 1.12;
+our $VERSION = 1.13;
 
 # Make the functions available by default
 our @EXPORT = qw(
@@ -64,7 +64,7 @@ case-insensitive regular expression search.
       sql_keyword_search(
          keywords          => 'cat,brown',
          columns           => ['pets','colors'],
-         every_colum       => 1,
+         every_column      => 1,
          every_word        => 1,
          whole_word        => 1,
          operator          => 'REGEXP'

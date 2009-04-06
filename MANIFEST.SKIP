@@ -27,5 +27,6 @@ _build
 patches
 rejects
 ^Build$
+^SQL-KeywordSearch
 
 

@@ -22,8 +22,6 @@ use SQL::KeywordSearch;
 X',"basic test for SQL");
     is_deeply(\@bind,['cat','cat','brown','brown'], 'basic test for bind params');
 
-warn $sql;
-
 }
 {
     my $test =  'every_column produces expected change';

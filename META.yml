@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: SQL-KeywordSearch
-version: 1.12
+version: 1.13
 author:
   - Mark Stosberg <mark@summersault.com>
 abstract: generate SQL for simple keyword searches
@@ -13,5 +13,5 @@ recommends:
 provides:
   SQL::KeywordSearch:
     file: lib/SQL/KeywordSearch.pm
-    version: 1.12
+    version: 1.13
 generated_by: Module::Build version 0.2611
